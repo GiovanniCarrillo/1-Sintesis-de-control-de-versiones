@@ -1,0 +1,38 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #ff4343;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+section {
+    margin-bottom: 2rem;
+    text-align: justify;
+}
+
+footer {
+    text-align: center;
+    padding: 0.5rem 0;
+    background-color: #eee;
+}
+
+li {
+    margin-left: 0; 
+    padding-left: 0; 
+}
+
+li span {
+    font-weight: bold; 
+}

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Conceptos Generales de Control de Versiones</title>
+</head>
+
+<body>
+    <header>
+        <h1>Conceptos Generales de Control de Versiones</h1>
+    </header>
+    <main>
+        <h2>Sintesis</h2>
+        <section>
+            <p>
+                Los sistemas de control de versiones son software que ayudan a documentar
+                los cambios realizados en el código a lo largo del tiempo.
+                A medida que un desarrollador edita el código, el sistema de control de versiones
+                toma una instantánea de los archivos. Después, guarda esa instantánea de forma
+                permanente para que se pueda recuperar más adelante si es necesario.
+            </p>
+
+            <p>
+                Sin control de versiones, los desarrolladores tienen la tentación de mantener
+                varias copias de código en su equipo. Esto es peligroso porque es fácil cambiar o
+                eliminar un archivo en la copia incorrecta del código, lo que podría perder trabajo.
+            </p>
+            Podemos encontrar 3 tipos de sistemas de control de versiones.
+            <ul>
+
+                <li><span>Sistemas de control de versiones locales:</span> Se basan en almacenar la información a una simple
+                    base de datos de manera local, donde llevan registro de los cambios realizados sobre los archivos.
+                </li>
+                <li><span>Sistemas de control de versiones centralizados: </span>Tienen un único servidor que contiene
+                    todos
+                    los archivos
+                    versionados, y varios clientes que descargan los archivos de ese lugar central. </li>
+                <li><span>Sistemas de control de versiones distribuidos:</span> Los clientes no sólo descargan la última
+                    instantánea de los archivos:
+                    replican completamente el repositorio.</li>
+            </ul>
+            <p></p>
+            El control de versiones tiene ciertos beneficios entre los cuales destacan que mejora la producción
+            de software al organizar flujos de trabajo, documenta cambios en cada versión, previene conflictos
+            en la colaboración y automatiza tareas. Además, facilita la restauración de versiones anteriores
+            y proporciona insights sobre modificaciones pasadas. En conjunto, optimiza la colaboración,
+            la eficiencia y la confiabilidad en el desarrollo de software.
+            </p>
+        </section>
+        <section>
+            <h2>GIT - Conceptos Básicos</h2>
+
+            Git es un sistema de control de versiones distribuido que convierte un clon local del proyecto en un
+            repositorio
+            completo. Estos repositorios locales permiten trabajar sin conexión y confirmar cambios localmente.
+            Posteriormente, los desarrolladores sincronizan sus repositorios locales con la copia en el servidor para
+            compartir los cambios.
+
+            <p>
+                Al guardar el trabajo, Git crea una confirmación, la cual es una instantánea de todos los archivos en un
+                momento dado. Si un archivo no ha cambiado de una información a la siguiente Git usa el archivo
+                almacenado
+                anteriormente.
+                <br><br>
+                Las confirmaciones crean vínculos con otras confirmaciones, formando un gráfico del historial de
+                desarrollo.
+                Es posible revertir el código a una confirmación anterior, revisar como cambiaron los archivos entre
+                una confirmación y la siguiente así como dónde y cuándo se realizaron los cambios.
+            </p>
+
+            <p>
+                Cada desarrollador guarda cambios en su repositorio local, lo que puede resultar en múltiples cambios en
+                la misma
+                confirmación. Git aisla y luego recombina cambios usando ramas, punteros para trabajo en curso. Esto
+                permite separación
+                y gestión. Tras completar trabajo en una rama, se puede fusionar nuevamente con la rama principal del
+                equipo.
+            </p>
+
+            <p>
+                En Git, los archivos se encuentran en tres estados: modificados, almacenados provisionalmente y
+                confirmados.
+                Los cambios iniciales están en el directorio de trabajo y no están en confirmaciones. Los cambios se
+                almacenan provisionalmente
+                antes de confirmar, en el área de almacenamiento. Una vez satisfechos, los archivos se confirman con un
+                mensaje y se agregan
+                al historial. El almacenamiento provisional permite elegir qué cambios incluir, posibilitando
+                confirmaciones más pequeñas para
+                facilitar la revisión del historial en busca de cambios específicos.
+            </p>
+
+        </section>
+        <hr>
+        <h2>Conclusion.</h2>
+        <section>
+            <p>
+                El control de versiones ha sido fundamental para la creación de aplicaciones, y páginas web,
+                ya que este permite gestionar los cambios que se realicen en el proceso de desarrollo, por lo tanto
+                es muy útil para volver a un punto anterior cuando se cometió un error y además funciona como un
+                respaldo
+                para la información.
+                Existen tres tipos de sistemas de control de versiones, locales, centralizados y distribuidos, tienen
+                distintos enfoques
+                para mantener un historial preciso de cambios. Su importancia radica en que mejoran la producción de
+                software
+                organizan los flujos de trabajo y previenen conflictos en la colaboración.
+                <br>
+                Al utilizar conceptos como confirmaciones, ramas y áreas de almacenamiento, Git permite a los
+                desarrolladores trabajar de manera colaborativa y mantener un historial de desarrollo completo y
+                accesible.
+            </p>
+        </section>
+    </main>
+
+    <footer>
+        <p>Alumno: José Giovanni Carrillo Rubio</p>
+    </footer>
+</body>
+
+</html>
